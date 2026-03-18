@@ -1,5 +1,10 @@
 # Prediction-Error-Driven Calibration for Model-User Alignment in Agentic Memory Systems
 
+**Joshua Warren**
+March 2026
+
+---
+
 ## Abstract
 
 Long-term memory systems for AI agents store user corrections as individual facts, yet agents persistently repeat the same *types* of mistakes across sessions. We introduce Prediction-Error-Driven Calibration (PEDC), a mechanism that treats user corrections as prediction errors, clusters them to identify systematic miscalibration between model and user, and synthesizes structured CalibrationRules that address root causes rather than individual symptoms. We evaluate PEDC on 1,002 production corrections from a deployed agentic system (OpenClaw/Engram) using a temporal holdout methodology. In ablation, PEDC-generated calibration rules prevent 6.3x more future corrections than raw correction accumulation (4.4% vs. 0.7% on 136 held-out corrections). Analysis of the correction corpus reveals that 25% of corrections (254/1,002) are systematic and calibration-addressable, while 75% are one-off factual errors outside the scope of any calibration system. We discuss the analogy to cerebellar forward model calibration, compare against existing approaches including sleep-time consolidation and self-editing memory, and propose a novel evaluation metric: correction preventability rate.
